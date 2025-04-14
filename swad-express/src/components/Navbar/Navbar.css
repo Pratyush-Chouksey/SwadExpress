@@ -1,0 +1,118 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    height: 32px;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, border-bottom 0.2s;
+    padding-bottom: 4px;
+  }
+  
+  .navbar-menu li.active {
+    color: #ff5722;
+    border-bottom: 2px solid #ff5722;
+  }
+  
+  .navbar-menu li:hover {
+    color: #ff5722;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-right img {
+    height: 22px;
+    cursor: pointer;
+  }
+  
+  .navbar-search-icon {
+    position: relative;
+  }
+  
+  .dot {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    height: 8px;
+    width: 8px;
+    background-color: #ff5722;
+    border-radius: 50%;
+  }
+  
+  .navbar-right button {
+    padding: 8px 16px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-right button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* ✅ Mobile Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 8px 14px;
+      height: 60px;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  
+    .logo {
+      height: 24px;
+    }
+  
+    .navbar-menu {
+      display: none !important;
+    }
+  
+    .navbar-right {
+      gap: 10px;
+    }
+  
+    .navbar-right img {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .navbar-right button {
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 18px;
+    }
+  }
+  

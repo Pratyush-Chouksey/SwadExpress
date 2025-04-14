@@ -1,0 +1,143 @@
+/* LoginPopUp.css */
+
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .login-popup-form {
+    background-color: #fff;
+    padding: 30px 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  /* 👇 Header is now visually part of the box */
+  .login-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .login-popup-header img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .login-popup-header img:hover {
+    transform: scale(1.2);
+  }
+  
+  .login-popup-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .login-popup-form input[type="text"],
+  .login-popup-form input[type="password"] {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .login-popup-form input[type="text"]:focus,
+  .login-popup-form input[type="password"]:focus {
+    border-color: #ff5722;
+  }
+  
+  .login-popup-form input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .login-popup-form p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    display: inline;
+  }
+  
+  .login-popup-form button {
+    padding: 12px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-popup-form button:hover {
+    background-color: #e64a19;
+  }
+  
+  .login-popup-form div:last-child {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .login-popup-form span {
+    color: #ff5722;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 6px;
+  }
+
+  .login-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .login-popup-header img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .login-popup-header img:hover {
+    transform: scale(1.2);
+  }  
+  
+  @media (max-width: 500px) {
+    .login-popup-form {
+      padding: 20px;
+    }
+  
+    .login-popup-header {
+      font-size: 20px;
+    }
+  }
+  

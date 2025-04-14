@@ -1,0 +1,126 @@
+.footer {
+    background-color: #3f3f3f; 
+    padding: 50px 20px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin-top: 80px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+  }
+  
+  .footer-content-left,
+  .footer-content-right {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .footer-content-left img {
+    width: 150px;
+    margin-bottom: 16px;
+  }
+  
+  .footer-content-left p {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.7;
+  }
+  
+  .footer-content-left-social {
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+  }
+  
+  .footer-content-left-social img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-content-left-social img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-content-right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .footer-content-center,
+  .footer-content-right-right {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-content-center h3,
+  .footer-content-right-right h2 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #fff;
+  }
+  
+  .footer-content-center ul,
+  .footer-content-right-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content-center a,
+  .footer-content-right-right li {
+    font-size: 14px;
+    display: block;
+    color: #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-content-center a:hover,
+  .footer-content-right-right li:hover {
+    color: #fff;
+  }
+  
+  hr {
+    margin: 40px 0 20px;
+    border: none;
+    border-top: 1px solid #444;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+  }
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+  
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right-right {
+      align-items: center;
+    }
+  
+    .footer-content-right {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer-content-left-social {
+      justify-content: center;
+    }
+  }
+  

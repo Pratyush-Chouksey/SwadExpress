@@ -24,7 +24,7 @@ const LoginPopUp = ({ setSignup }) => {
             <input type="checkbox" required />
             <p>I agree to the Terms and Conditions</p>
           </div>
-          <button onClick={()=>setSignup(false)}>{regester}</button>
+          <button >{regester}</button>
           {regester === "Sign Up" ? (
             <div className="toggle-auth">
               <p>Already have an account</p>

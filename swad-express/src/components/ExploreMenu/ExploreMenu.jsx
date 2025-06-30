@@ -1,7 +1,7 @@
 import React from "react";
 import "./ExploreMenu.css";
 import { menu_list } from "../../assets/assets";
-import { img, li } from "framer-motion/client";
+
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (

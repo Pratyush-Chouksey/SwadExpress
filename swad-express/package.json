@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "framer-motion": "^12.7.2",
+    "newtk": "^1.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.5.0"
+    "react-router-dom": "^7.5.0",
+    "ripplex": "^1.0.9",
+    "ripplex-core": "^0.0.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
